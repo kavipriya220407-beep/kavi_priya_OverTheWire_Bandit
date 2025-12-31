@@ -67,11 +67,3 @@ cat /etc/bandit_pass/bandit34
 
 ---
 
-## 🎉 Completion Note
-
-Levels 30–34 focus mainly on:
-- Advanced Git concepts (tags, ignored files)
-- Escaping restricted shells
-- Understanding setuid binaries
-
-Completing these levels demonstrates a strong foundation in Linux privilege handling and version control basics.
