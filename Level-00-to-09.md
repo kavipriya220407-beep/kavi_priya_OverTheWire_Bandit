@@ -16,3 +16,16 @@ cat readme
 ### 🔹 Screenshot
 ![Level 0 Output](images/bandit0.png)
 
+## Level 1-2
+
+The password for this level is stored in a file called `-` in the home directory.  
+Since `-` is treated as standard input, we use `./-` to explicitly read it from the current directory.
+
+### 🔹 Commands Used
+```bash
+ls
+cat ./-
+
+### OUTPUT
+![Level 1 Output](images/bandit1.png)
+
