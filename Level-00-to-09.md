@@ -14,6 +14,16 @@ cat readme
 
 
 
+
+> ✅ Triple backticks create a gray box for commands.  
+
+---
+
+## **Step 5 – Add screenshot**
+
+Right below the code block, type:
+
+```markdown
 ### 🔹 Screenshot
 ![Level 0 Output](images/bandit0.png)
 
