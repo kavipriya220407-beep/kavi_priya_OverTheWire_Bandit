@@ -11,5 +11,9 @@ For this level, the host is `bandit.labs.overthewire.org`, the port is `2220`. T
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ls
 cat readme
+
+
+
 ### 🔹 Screenshot
 ![Level 0 Output](images/bandit0.png)
+
