@@ -1,0 +1,77 @@
+# OverTheWire Bandit Write-ups (Levels 30–34)
+
+---
+
+## Level 30-31
+
+In this level, the password is stored inside a **Git repository**, but it is not visible in the normal files.  
+We need to inspect **Git tags**, as the password is hidden there.
+
+### 🔹 Commands Used
+git clone ssh://bandit30-git@localhost/home/bandit30-git/repo
+cd repo
+git tag
+git show secret
+
+### 🔹 Screenshot
+![Level 30 Output](images/bandit30.png)
+
+---
+
+## Level 31-32
+
+The password is inside a Git repository, but the file is ignored using `.gitignore`.  
+We must force Git to show and commit the ignored file.
+
+### 🔹 Commands Used
+git clone ssh://bandit31-git@localhost/home/bandit31-git/repo
+cd repo
+ls -a
+cat README.md
+git add -f key.txt
+git commit -m "Adding key file"
+git push
+
+### 🔹 Screenshot
+![Level 31 Output](images/bandit31.png)
+
+---
+
+## Level 32-33
+
+This level drops us into a **restricted uppercase shell** where commands must be uppercase.  
+We escape the shell by spawning a new bash shell.
+
+### 🔹 Commands Used
+$0
+whoami
+cat /etc/bandit_pass/bandit33
+
+### 🔹 Screenshot
+![Level 32 Output](images/bandit32.png)
+
+---
+
+## Level 33-34
+
+This is the final level of Bandit.  
+The password is stored in a file that is only readable by a **setuid binary**.
+
+### 🔹 Commands Used
+ls
+./bandit33
+cat /etc/bandit_pass/bandit34
+
+### 🔹 Screenshot
+![Level 33 Output](images/bandit33.png)
+
+---
+
+## 🎉 Completion Note
+
+Levels 30–34 focus mainly on:
+- Advanced Git concepts (tags, ignored files)
+- Escaping restricted shells
+- Understanding setuid binaries
+
+Completing these levels demonstrates a strong foundation in Linux privilege handling and version control basics.
